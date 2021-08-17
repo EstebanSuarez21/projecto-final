@@ -69,65 +69,60 @@
     <section class="paginaDeInicio container">
       <article class="textoDeInicio">
         <h1>¡Bienvenidos a Netfliz!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nisi porro voluptates, cupiditate placeat
-          inventore dolorem fugiat voluptatibus illo. Blanditiis ullam, officia iusto nobis deleniti nam, quo sequi id
-          nesciunt ea expedita neque quibusdam tenetur, dignissimos labore molestiae? Iste, blanditiis! Quidem eum animi
-          quia sunt minima impedit quasi ex dolore?</p>
+        <p>¿Viernes por la noche y no sabes que ver? ¡Llegaste al lugar correcto! Aquí en Netfliz te dejamos las mejores recomendaciones para tu maratón de fin de semana, además de las últimas noticias </p>
       </article>
     </section>
     <div class="row">
       <section class="topMasVisto container col-12 col-sm-6 col-md-5 col-lg-3">
         <h2>Peliculas más vistas</h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81406326"><img src="imagenes/movieOne.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81009845"><img src="imagenes/movieTwo.webp"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81334750"><img src="imagenes/movieThree.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81350434"><img src="imagenes/movieFour.webp"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81325689"><img src="imagenes/movieFive.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81427442"><img src="imagenes/movieSix.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81334749"><img src="imagenes/movieSeven.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81327369"><img src="imagenes/movieEight.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81248435"><img src="imagenes/movieNine.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
               <a href="https://www.netflix.com/browse/genre/34399?jbv=81438809"><img src="imagenes/movieTen.jpg"
-                  class="d-block w-100" alt="..."></a>
+                class="d-block w-100" alt="..."></a>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -135,12 +130,12 @@
       </section>
       <section class="topMasVisto container col-12 col-sm-6 col-md-5 col-lg-3">
         <h2>Series más vistas</h2>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="10000">
               <img src="imagenes/serieOne.webp" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="2000">
               <img src="imagenes/serieTwo.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
@@ -168,13 +163,11 @@
               <img src="imagenes/serieTen.webp" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-            data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>

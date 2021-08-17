@@ -65,35 +65,36 @@ main .footer {
     margin-top: 1rem;
     margin-right: 2rem; }
 
-main .recomendaciones .row .distintasRecomendaciones h1 {
-  color: red;
-  font-family: 'Rubik', sans-serif;
-  letter-spacing: 1px;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 20px; }
-
-main .recomendaciones .row .distintasRecomendaciones .recomendacion {
-  width: 100%;
-  height: auto;
-  padding: 30px;
-  margin: 10px; }
-  main .recomendaciones .row .distintasRecomendaciones .recomendacion h2 {
+main .row {
+  width: 95vw; }
+  main .row .distintasRecomendaciones h1 {
+    color: red;
     font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
     letter-spacing: 1px;
-    word-spacing: 5px;
-    color: red; }
-  main .recomendaciones .row .distintasRecomendaciones .recomendacion p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    padding: 10px 0px;
-    margin: 10px 0px;
-    color: #fffefe; }
-  main .recomendaciones .row .distintasRecomendaciones .recomendacion .imagenesDeRecomendacion {
-    width: 90%; }
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 20px; }
+  main .row .distintasRecomendaciones .recomendacion {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    margin: 10px; }
+    main .row .distintasRecomendaciones .recomendacion h2 {
+      font-family: 'Rubik', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      color: red; }
+    main .row .distintasRecomendaciones .recomendacion p {
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      padding: 10px 0px;
+      margin: 10px 0px;
+      color: #fffefe; }
+    main .row .distintasRecomendaciones .recomendacion .imagenesDeRecomendacion {
+      width: 90%; }
 
 aside {
   width: 40vw;

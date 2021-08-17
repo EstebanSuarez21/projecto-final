@@ -92,8 +92,8 @@ main {
             }
         }
     }
-    .recomendaciones {
         .row {
+            width: 95vw;
             .distintasRecomendaciones {
                 h1 {
                     color: red;
@@ -130,7 +130,7 @@ main {
                     
             }
         }
-        }
+        
     }
     
 }
