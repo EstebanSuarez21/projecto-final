@@ -96,7 +96,10 @@ main {
             margin-right: 0.5rem;
             margin-top: 0.5rem;
             .iconRedSocial {
-                color:red
+                width: 20%;
+                color:red;
+                margin-right: 0.6rem;
+                
             }
         }
     }
@@ -134,7 +137,7 @@ main {
                         .imagenesDeRecomendacion {
                             width: 90%;
                         }
-                    
+
             }
         }
         
@@ -203,12 +206,18 @@ aside p {
 }
 
 @media (min-width: 351px) and (max-width:516px) {
+
   aside p {
     width: 65%;
     font-size: 0.8rem;
   }
 }
 
+@media(min-width: 517px) and (max-width:767px) {
+    .footerRight{
+        margin-right: 2rem;
+    }
+}
 @media (min-width: 768px) and (max-width:980px){
   .noticias img {
     width: 7rem;
@@ -221,6 +230,22 @@ aside p {
   }
 }
 
+@media (min-width: 981px) and (max-width:2560px){
+    .textFooter {
+        font-size: 1.5rem;
+    }
+    .footerRight{
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .iconRedSocial {
+            width: 50rem;
+            font-size: 2.5rem;
+            
+        }
+    }
+}
 .errorPage {
     width: 100vw;
     height: 80vh;

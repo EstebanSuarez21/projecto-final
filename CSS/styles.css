@@ -72,7 +72,9 @@ main .footer {
     margin-right: 0.5rem;
     margin-top: 0.5rem; }
     main .footer .footerRight .iconRedSocial {
-      color: red; }
+      width: 20%;
+      color: red;
+      margin-right: 0.6rem; }
 
 main .row .distintasRecomendaciones h1 {
   color: red;
@@ -159,6 +161,10 @@ aside p {
     width: 65%;
     font-size: 0.8rem; } }
 
+@media (min-width: 517px) and (max-width: 767px) {
+  .footerRight {
+    margin-right: 2rem; } }
+
 @media (min-width: 768px) and (max-width: 980px) {
   .noticias img {
     width: 7rem;
@@ -167,6 +173,18 @@ aside p {
     width: 65%;
     font-size: 0.7rem;
     padding: 0.3rem; } }
+
+@media (min-width: 981px) and (max-width: 2560px) {
+  .textFooter {
+    font-size: 1.5rem; }
+  .footerRight {
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .footerRight .iconRedSocial {
+      width: 50rem;
+      font-size: 2.5rem; } }
 
 .errorPage {
   width: 100vw;
