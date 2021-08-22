@@ -6,7 +6,7 @@
     background-color: rgb(0, 0, 0);
 }
 
-
+// aca empieza el navbar
 main {
     header {
         .bg-dark {  
@@ -31,6 +31,9 @@ main {
             }
         }
     }
+    // acá termina el navbar
+
+    // acá comienza el texto del home
     .paginaDeInicio {
         margin-top: 2rem;
 
@@ -54,28 +57,38 @@ main {
             }
         }
     }
+    // acá termina el texto del home
+
+    // acá comienza la seccíon de más visto
     .row {
         margin: auto;
         .topMasVisto {
             margin-bottom: 5rem;
+            margin-top: 5rem;
 
-            .topMasVisto h2 {
-                height: 8rem;
+            h2 {
+                height: 3rem;
                 text-align: center;
+                color: white;
+                
             }
         }
     }
+    // acá termina la sección de más vistos
 
+    // acá comienza el footer
     .footer {
         display: flex;
         width: 100%;
-        height: auto;
+        max-height: 10rem;
         margin-top: 1rem;
         border-top: solid 3px red;
         justify-content: space-between;
-
         .footerLeft {
             width: 75%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             .iconFooter {
                 width: 4rem;
                 display: inline-block;
@@ -86,23 +99,27 @@ main {
                 width: 62%;
                 font-size: 0.8rem;
                 color: white;
-                margin-top: 0.2rem;
+                margin-top: 0.5rem;
             }
         }
 
         .footerRight {
-            width: 20%;
-            font-size: 1.5rem;
-            margin-right: 0.5rem;
-            margin-top: 0.5rem;
+            width: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
             .iconRedSocial {
                 width: 20%;
                 color:red;
                 margin-right: 0.6rem;
-                
+                font-size: 1.5rem;
             }
         }
     }
+    // acá termina el footer
+
+    // acá comienza la sección de recomendaciones
         .row {
             .distintasRecomendaciones {
                 h1 {
@@ -112,6 +129,13 @@ main {
                     font-size: 4rem;
                     text-align: center;
                     margin-top: 20px;
+                    }
+                    h2{
+                        font-family: 'Rubik', sans-serif;
+                        font-size: 2.5rem;
+                        letter-spacing: 2px;
+                        word-spacing: 5px;
+                        color: red;
                     }
                     .recomendacion {
                         width: 100%;
@@ -137,59 +161,80 @@ main {
                         .imagenesDeRecomendacion {
                             width: 90%;
                         }
-
             }
         }
         
     }
-    
 }
+    // acá termina la sección de recomendaciones
 
+    // acá comienza la seccíon de noticias
 aside {
     width: 40vw;
     height: auto;
-    margin: 20px;
+    margin: 5px 0px;
     padding: 20px;
     margin-top: 20vh;
-
+    h2{
+        color: red;
+        font-family: 'Rubik', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        text-align: center;
+    }
+    .noticias{
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+        position: relative;
+        img {
+            display: inline-block;
+            width: 40%;
+        }
+        p {
+            display: inline-block;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            padding-left: 5px;
+            margin-left: 10px;
+            margin-top: 1%;
+            margin-right: 50px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            color: white;
+        }
+    }
 }
+// acá termina la sección de noticias
 
-.noticias{
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    margin: 5px;
-    position: relative;
-}
-
-aside h2{
-    color: red;
-    font-family: 'Rubik', sans-serif;
-    font-size: 3rem;
-    letter-spacing: 1px;
-    word-spacing: 1px;
+// acá comienza la pagina de error 404
+.errorPage {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-}
-
-.noticias img {
-    display: inline-block;
-    width: 40%;
-}
-
-aside p {
-    display: inline-block;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    padding-left: 5px;
-    margin-left: 10px;
-    margin-top: 1%;
-    margin-right: 50px;
-    font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    word-spacing: 1px;
-    color: white;
+    h1{
+        color: red;
+    }
+    p {
+        color: white;
+    }
+    img {
+        width: 20rem;    
+    }
+    button {
+        margin-top: 1rem;
+        background-color: brown;
+        border-radius: 2px;
+    }
 }
 
 @media (min-width: 0px) and (max-width:350px) {
@@ -202,31 +247,31 @@ aside p {
   .noticias img {
     width: 30%;
     height: 5rem;
-}
+    }
 }
 
 @media (min-width: 351px) and (max-width:516px) {
 
   aside p {
-    width: 65%;
+    width: 60%;
     font-size: 0.8rem;
   }
 }
 
 @media(min-width: 517px) and (max-width:767px) {
-    .footerRight{
-        margin-right: 2rem;
+    .noticias img {
+        height: 5rem;
     }
 }
+
 @media (min-width: 768px) and (max-width:980px){
   .noticias img {
     width: 7rem;
-    height: 5rem;
+    height: 5.2rem;
 }
   aside p {
-    width: 65%;
-    font-size: 0.7rem;
-    padding: 0.3rem;
+    width: 60%;
+    font-size: 0.6rem;
   }
 }
 
@@ -234,33 +279,8 @@ aside p {
     .textFooter {
         font-size: 1.5rem;
     }
-    .footerRight{
-        width: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        .iconRedSocial {
-            width: 50rem;
-            font-size: 2.5rem;
-            
-        }
-    }
-}
-.errorPage {
-    width: 100vw;
-    height: 80vh;
-    text-align: center;
-    h1{
-        color: red;
-    }
-    p {
-        color: white;
-    }
-    img {
-        width: 20rem;    
-    }
-    button {
-        background-color: brown;
-        border-radius: 2px;
+    
+    .iconRedSocial {
+        font-size: 2.5rem;
     }
 }

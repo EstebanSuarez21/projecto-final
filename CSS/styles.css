@@ -16,11 +16,7 @@ main header .bg-dark {
       background-color: black; }
       main header .bg-dark .navbar-collapse .dropdown-menu .dropdown-item {
         text-align: center;
-        color: white;
-        :hover {
-
-        }
-      }
+        color: white; }
     main header .bg-dark .navbar-collapse .nav-item {
       text-align: center; }
 
@@ -46,20 +42,25 @@ main .paginaDeInicio {
 main .row {
   margin: auto; }
   main .row .topMasVisto {
-    margin-bottom: 5rem; }
-    main .row .topMasVisto .topMasVisto h2 {
-      height: 8rem;
-      text-align: center; }
+    margin-bottom: 5rem;
+    margin-top: 5rem; }
+    main .row .topMasVisto h2 {
+      height: 3rem;
+      text-align: center;
+      color: white; }
 
 main .footer {
   display: flex;
   width: 100%;
-  height: auto;
+  max-height: 10rem;
   margin-top: 1rem;
   border-top: solid 3px red;
   justify-content: space-between; }
   main .footer .footerLeft {
-    width: 75%; }
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
     main .footer .footerLeft .iconFooter {
       width: 4rem;
       display: inline-block;
@@ -69,16 +70,18 @@ main .footer {
       width: 62%;
       font-size: 0.8rem;
       color: white;
-      margin-top: 0.2rem; }
+      margin-top: 0.5rem; }
   main .footer .footerRight {
-    width: 20%;
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem; }
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; }
     main .footer .footerRight .iconRedSocial {
       width: 20%;
       color: red;
-      margin-right: 0.6rem; }
+      margin-right: 0.6rem;
+      font-size: 1.5rem; }
 
 main .row .distintasRecomendaciones h1 {
   color: red;
@@ -87,6 +90,13 @@ main .row .distintasRecomendaciones h1 {
   font-size: 4rem;
   text-align: center;
   margin-top: 20px; }
+
+main .row .distintasRecomendaciones h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: red; }
 
 main .row .distintasRecomendaciones .recomendacion {
   width: 100%;
@@ -113,113 +123,47 @@ main .row .distintasRecomendaciones .recomendacion {
 aside {
   width: 40vw;
   height: auto;
-  margin: 20px;
+  margin: 5px 0px;
   padding: 20px;
   margin-top: 20vh; }
-
-.noticias {
-  width: 100%;
-  height: auto;
-  padding: 5px;
-  margin: 5px;
-  position: relative; }
-
-aside h2 {
-  color: red;
-  font-family: 'Rubik', sans-serif;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  text-align: center; }
-
-.noticias img {
-  display: inline-block;
-  width: 40%; }
-
-aside p {
-  display: inline-block;
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  padding-left: 5px;
-  margin-left: 10px;
-  margin-top: 0;
-  margin-right: 50px;
-  font-family: 'Rubik', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  color: white; }
-
-@media (min-width: 0px) and (max-width: 350px) {
-  aside p {
-    width: 60%;
-    font-size: 0.7rem;
-  }
-  .noticias img {
-    width: 30%;
-    height: 5rem; } }
-
-@media (min-width: 351px) and (max-width: 516px) {
-  .noticias img {
-    width: 30%;
-    height: 5.4rem; }
-
-  aside p {
-    width: 65%;
-    font-size: 0.7rem;
-  } 
-}
-
-@media (min-width: 517px) and (max-width: 767px) {
-  .footerRight {
-    margin-right: 2rem; }
-
-    .noticias img {
-      width: 30%;
-      height: 5.4rem; }
-
-    aside p {
-      width: 65%;
-      font-size: 0.8rem;
-      margin-top: 0.1rem;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 980px) {
-  .noticias img {
-    width: 7rem;
-    height: 7rem; }
-  aside p {
-    width: 65%;
-    font-size: 0.7rem;
-    padding: 0.3rem; } 
-}
-
-@media (min-width: 981px) and (max-width: 2560px) {
-  .noticias img {
-    height: 10rem; }
-  aside p {
-    width: 55%;
-    font-size: 0.9rem;
-    padding: 0.2rem;
-    margin-top: 0.1rem;
-  }
-
-  .textFooter {
-    font-size: 1.5rem; }
-  .footerRight {
-    width: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-    .footerRight .iconRedSocial {
-      width: 50rem;
-      font-size: 2.5rem; } }
+  aside h2 {
+    color: red;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: center; }
+  aside .noticias {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    position: relative; }
+    aside .noticias img {
+      display: inline-block;
+      width: 40%; }
+    aside .noticias p {
+      display: inline-block;
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      padding-left: 5px;
+      margin-left: 10px;
+      margin-top: 1%;
+      margin-right: 50px;
+      font-family: 'Rubik', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      color: white; }
 
 .errorPage {
   width: 100vw;
   height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   text-align: center; }
   .errorPage h1 {
     color: red; }
@@ -228,5 +172,38 @@ aside p {
   .errorPage img {
     width: 20rem; }
   .errorPage button {
+    margin-top: 1rem;
     background-color: brown;
     border-radius: 2px; }
+
+@media (min-width: 0px) and (max-width: 350px) {
+  aside p {
+    width: 60%;
+    font-size: 0.7rem;
+    margin-top: 0; }
+  .noticias img {
+    width: 30%;
+    height: 5rem; } }
+
+@media (min-width: 351px) and (max-width: 516px) {
+  aside p {
+    width: 60%;
+    font-size: 0.8rem; } }
+
+@media (min-width: 517px) and (max-width: 767px) {
+  .noticias img {
+    height: 5rem; } }
+
+@media (min-width: 768px) and (max-width: 980px) {
+  .noticias img {
+    width: 7rem;
+    height: 5.2rem; }
+  aside p {
+    width: 60%;
+    font-size: 0.6rem; } }
+
+@media (min-width: 981px) and (max-width: 2560px) {
+  .textFooter {
+    font-size: 1.5rem; }
+  .iconRedSocial {
+    font-size: 2.5rem; } }
