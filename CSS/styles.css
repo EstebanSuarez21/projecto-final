@@ -16,7 +16,11 @@ main header .bg-dark {
       background-color: black; }
       main header .bg-dark .navbar-collapse .dropdown-menu .dropdown-item {
         text-align: center;
-        color: white; }
+        color: white;
+        :hover {
+
+        }
+      }
     main header .bg-dark .navbar-collapse .nav-item {
       text-align: center; }
 
@@ -139,7 +143,7 @@ aside p {
   height: 100%;
   padding-left: 5px;
   margin-left: 10px;
-  margin-top: 1%;
+  margin-top: 0;
   margin-right: 50px;
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
@@ -151,30 +155,57 @@ aside p {
   aside p {
     width: 60%;
     font-size: 0.7rem;
-    margin-top: 0; }
+  }
   .noticias img {
     width: 30%;
     height: 5rem; } }
 
 @media (min-width: 351px) and (max-width: 516px) {
+  .noticias img {
+    width: 30%;
+    height: 5.4rem; }
+
   aside p {
     width: 65%;
-    font-size: 0.8rem; } }
+    font-size: 0.7rem;
+  } 
+}
 
 @media (min-width: 517px) and (max-width: 767px) {
   .footerRight {
-    margin-right: 2rem; } }
+    margin-right: 2rem; }
+
+    .noticias img {
+      width: 30%;
+      height: 5.4rem; }
+
+    aside p {
+      width: 65%;
+      font-size: 0.8rem;
+      margin-top: 0.1rem;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 980px) {
   .noticias img {
     width: 7rem;
-    height: 5rem; }
+    height: 7rem; }
   aside p {
     width: 65%;
     font-size: 0.7rem;
-    padding: 0.3rem; } }
+    padding: 0.3rem; } 
+}
 
 @media (min-width: 981px) and (max-width: 2560px) {
+  .noticias img {
+    height: 10rem; }
+  aside p {
+    width: 55%;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    margin-top: 0.1rem;
+  }
+
   .textFooter {
     font-size: 1.5rem; }
   .footerRight {
