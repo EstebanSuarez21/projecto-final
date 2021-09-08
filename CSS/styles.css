@@ -2,8 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   background-color: black; }
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.hoverLink :hover {
+  color: red; }
 
 main header .bg-dark {
   background-color: #000000 !important;
@@ -20,34 +28,26 @@ main header .bg-dark {
     main header .bg-dark .navbar-collapse .nav-item {
       text-align: center; }
 
-main .paginaDeInicio {
-  margin-top: 2rem; }
-  main .paginaDeInicio .textoDeInicio {
-    margin-top: 7rem;
-    text-align: center; }
-    main .paginaDeInicio .textoDeInicio h1 {
-      color: red;
-      font-size: 2.5rem;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-      word-spacing: 5px; }
-    main .paginaDeInicio .textoDeInicio p {
-      color: white;
-      font-size: 1rem;
-      font-family: 'Rubik', sans-serif;
-      letter-spacing: 2px;
-      word-spacing: 2px;
-      line-height: 1.6; }
+main .paginaDeInicio .textoDeInicio {
+  margin-top: 7rem;
+  text-align: center;
+  width: 90vw; }
+  main .paginaDeInicio .textoDeInicio h1 {
+    color: red;
+    font-size: 2.5rem;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 5px; }
+  main .paginaDeInicio .textoDeInicio p {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 1.6; }
 
-main .row {
-  margin: auto; }
-  main .row .topMasVisto {
-    margin-bottom: 5rem;
-    margin-top: 5rem; }
-    main .row .topMasVisto h2 {
-      height: 3rem;
-      text-align: center;
-      color: white; }
+main .paginaDeInicio .gridTopMasVisto {
+  width: 90vw; }
 
 main .footer {
   display: flex;
@@ -83,7 +83,7 @@ main .footer {
       margin-right: 0.6rem;
       font-size: 1.5rem; }
 
-main .row .distintasRecomendaciones h1 {
+.distintasRecomendaciones h1 {
   color: red;
   font-family: 'Rubik', sans-serif;
   letter-spacing: 1px;
@@ -91,76 +91,79 @@ main .row .distintasRecomendaciones h1 {
   text-align: center;
   margin-top: 20px; }
 
-main .row .distintasRecomendaciones h2 {
+.distintasRecomendaciones h2 {
   font-family: 'Rubik', sans-serif;
   font-size: 2.5rem;
   letter-spacing: 2px;
   word-spacing: 5px;
   color: red; }
 
-main .row .distintasRecomendaciones .recomendacion {
-  width: 100%;
-  height: auto;
-  padding: 30px;
-  margin: 10px; }
-  main .row .distintasRecomendaciones .recomendacion h2 {
+.distintasRecomendaciones .recomendacion {
+  width: 90vw; }
+  .distintasRecomendaciones .recomendacion h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 2rem;
     letter-spacing: 1px;
     word-spacing: 5px;
     color: red; }
-  main .row .distintasRecomendaciones .recomendacion p {
+  .distintasRecomendaciones .recomendacion .textoRecomendacion {
+    width: 95%;
     font-family: 'Rubik', sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
     word-spacing: 1px;
-    padding: 10px 0px;
-    margin: 10px 0px;
+    margin-top: 1rem;
     color: #fffefe; }
-  main .row .distintasRecomendaciones .recomendacion .imagenesDeRecomendacion {
-    width: 90%; }
+  .distintasRecomendaciones .recomendacion .imagenesDeRecomendacion {
+    width: 95%; }
+  .distintasRecomendaciones .recomendacion section {
+    margin-top: 1rem; }
+    .distintasRecomendaciones .recomendacion section .linkVerAhora {
+      text-decoration: none;
+      color: #4e4e4e;
+      width: 10rem; }
+      .distintasRecomendaciones .recomendacion section .linkVerAhora i {
+        display: inline-block;
+        font-size: 1.2rem;
+        width: 100%; }
+        .distintasRecomendaciones .recomendacion section .linkVerAhora i p {
+          display: inline-block;
+          width: 10rem;
+          padding-left: 0.5rem; }
 
-aside {
-  width: 40vw;
-  height: auto;
-  margin: 5px 0px;
-  padding: 20px;
-  margin-top: 20vh; }
-  aside h2 {
+aside section {
+  width: 90vw;
+  margin-top: 2rem; }
+  aside section h2 {
     color: red;
     font-family: 'Rubik', sans-serif;
     font-size: 3rem;
     letter-spacing: 1px;
     word-spacing: 1px;
     text-align: center; }
-  aside .noticias {
+  aside section .noticias {
     width: 100%;
     height: auto;
-    padding: 5px;
-    margin: 5px;
-    position: relative; }
-    aside .noticias img {
+    position: relative;
+    margin-top: 1rem; }
+    aside section .noticias img {
       display: inline-block;
-      width: 40%; }
-    aside .noticias p {
+      width: 40%;
+      height: 10vh; }
+    aside section .noticias p {
       display: inline-block;
       position: absolute;
       width: 55%;
       padding-left: 5px;
       font-family: 'Rubik', sans-serif;
-      font-size: 0.5rem;
+      font-size: 0.65rem;
       letter-spacing: 1px;
       word-spacing: 1px;
       color: white; }
 
 .errorPage {
   width: 100vw;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
+  height: 80vh; }
   .errorPage h1 {
     color: red; }
   .errorPage p {
@@ -172,28 +175,33 @@ aside {
     background-color: brown;
     border-radius: 2px; }
 
-@media (min-width: 351px) and (max-width: 516px) {
-  aside .noticias p {
-    width: 60%;
-    font-size: 0.7rem; } }
-
-@media (min-width: 517px) and (max-width: 767px) {
-  .noticias img {
-    height: 5rem; } }
-
-@media (min-width: 768px) and (max-width: 980px) {
-  .noticias img {
-    width: 7rem;
-    height: 5.2rem; }
-  aside .noticias p {
-    width: 60%;
-    font-size: 0.6rem; } }
+@media (min-width: 768px) {
+  .flexCenter {
+    justify-content: flex-start; }
+  .gridRecomendacion {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-auto-flow: row; }
+  .distintasRecomendaciones {
+    width: 90%; }
+    .distintasRecomendaciones .recomendacion {
+      width: 100%; }
+  aside section {
+    width: 90%; }
+    aside section .noticias img {
+      width: 45%;
+      height: 7.5rem; }
+    aside section .noticias p {
+      width: 55%;
+      font-size: 0.75rem; } }
 
 @media (min-width: 981px) and (max-width: 2561px) {
-  aside .noticias p {
-    width: 60%;
+  aside section .noticias img {
+    width: 40%; }
+  aside section .noticias p {
     font-size: 0.9rem; }
-  .textFooter {
-    font-size: 1.5rem; }
+  main .footer .footerLeft .textFooter {
+    font-size: 1.3rem; }
   .iconRedSocial {
     font-size: 2.5rem; } }

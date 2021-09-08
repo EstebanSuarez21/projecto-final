@@ -2,10 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
-
+// centrado de elementos
+.flexCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.hoverLink{
+    :hover{
+        color: red;
+    }
+}
 // aca empieza el navbar
 main {
     header {
@@ -31,15 +41,14 @@ main {
             }
         }
     }
-    // acá termina el navbar
+// acá termina el navbar
 
-    // acá comienza el texto del home
+// acá comienza el texto del home
     .paginaDeInicio {
-        margin-top: 2rem;
-
         .textoDeInicio {
             margin-top: 7rem;
             text-align: center;
+            width: 90vw;
             h1 {
                 color: red;
                 font-size: 2.5rem;
@@ -56,25 +65,11 @@ main {
                 line-height: 1.6;
             }
         }
-    }
-    // acá termina el texto del home
-
-    // acá comienza la seccíon de más visto
-    .row {
-        margin: auto;
-        .topMasVisto {
-            margin-bottom: 5rem;
-            margin-top: 5rem;
-
-            h2 {
-                height: 3rem;
-                text-align: center;
-                color: white;
-                
-            }
+        .gridTopMasVisto {
+            width: 90vw;
         }
     }
-    // acá termina la sección de más vistos
+// acá termina el texto del home
 
     // acá comienza el footer
     .footer {
@@ -118,105 +113,108 @@ main {
         }
     }
     // acá termina el footer
-
-    // acá comienza la sección de recomendaciones
-        .row {
-            .distintasRecomendaciones {
-                h1 {
-                    color: red;
-                    font-family: 'Rubik', sans-serif;
-                    letter-spacing: 1px;
-                    font-size: 4rem;
-                    text-align: center;
-                    margin-top: 20px;
-                    }
-                    h2{
-                        font-family: 'Rubik', sans-serif;
-                        font-size: 2.5rem;
-                        letter-spacing: 2px;
-                        word-spacing: 5px;
-                        color: red;
-                    }
-                    .recomendacion {
-                        width: 100%;
-                        height: auto;
-                        padding: 30px;
-                        margin: 10px;
-                        h2 {
-                            font-family: 'Rubik', sans-serif;
-                            font-size: 2rem;
-                            letter-spacing: 1px;
-                            word-spacing: 5px;
-                            color: red;
-                            }
-                        p {
-                            font-family: 'Rubik', sans-serif;
-                            font-size: 1rem;
-                            letter-spacing: 1px;
-                            word-spacing: 1px;
-                            padding: 10px 0px;
-                            margin: 10px 0px;
-                            color: rgb(255, 254, 254)
-                            }
-                        .imagenesDeRecomendacion {
-                            width: 90%;
-                        }
-            }
-        }
-        
-    }
 }
-    // acá termina la sección de recomendaciones
 
-    // acá comienza la seccíon de noticias
-aside {
-    width: 40vw;
-    height: auto;
-    margin: 5px 0px;
-    padding: 20px;
-    margin-top: 20vh;
-    h2{
+
+.distintasRecomendaciones {
+    h1 {
         color: red;
         font-family: 'Rubik', sans-serif;
-        font-size: 3rem;
         letter-spacing: 1px;
-        word-spacing: 1px;
+        font-size: 4rem;
         text-align: center;
-    }
-    .noticias{
-        width: 100%;
-        height: auto;
-        padding: 5px;
-        margin: 5px;
-        position: relative;
-        img {
-            display: inline-block;
-            width: 40%;
+        margin-top: 20px;
         }
-        p {
-            display: inline-block;
-            position: absolute;
-            width: 55%;
-            padding-left: 5px;
+    h2{
+        font-family: 'Rubik', sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        color: red;
+    }
+    .recomendacion {
+        width: 90vw ;
+        h2 {
             font-family: 'Rubik', sans-serif;
-            font-size: 0.5rem;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            color: red;
+            }
+        .textoRecomendacion {
+            width: 95%;
+            font-family: 'Rubik', sans-serif;
+            font-size: 1rem;
             letter-spacing: 1px;
             word-spacing: 1px;
-            color: white;
+            margin-top: 1rem;
+            color: rgb(255, 254, 254)
+            }
+        .imagenesDeRecomendacion {
+            width: 95%;
+        }
+        section{
+            margin-top: 1rem;
+            .linkVerAhora{
+                text-decoration: none;
+                color: rgb(78, 78, 78);
+                width: 10rem;
+                i{
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    width: 100%;
+                    p{
+                        display: inline-block;
+                        width: 10rem;
+                        padding-left: 0.5rem;
+                    }
+                }
+            }
         }
     }
 }
-// acá termina la sección de noticias
 
+
+aside {
+    section{
+        width: 90vw;
+        margin-top: 2rem;
+        h2{
+            color: red;
+            font-family: 'Rubik', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            text-align: center;
+        }
+        .noticias{
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-top: 1rem;
+            img {
+                display: inline-block;
+                width: 40%;
+                height: 10vh;
+            }
+            p {
+                display: inline-block;
+                position: absolute;
+                width: 55%;
+                padding-left: 5px;
+                font-family: 'Rubik', sans-serif;
+                font-size: 0.65rem;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                color: white;
+            }
+        }
+    }
+}
 // acá comienza la pagina de error 404
 .errorPage {
     width: 100vw;
     height: 80vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
     h1{
         color: red;
     }
@@ -233,43 +231,63 @@ aside {
     }
 }
 
-@media (min-width: 0px) and (max-width:350px) {
 
-  
-}
-
-@media (min-width: 351px) and (max-width:516px) {
-
-  aside .noticias p {
-    width: 60%;
-    font-size: 0.7rem;
-  }
-}
-
-@media(min-width: 517px) and (max-width:767px) {
-    .noticias img {
-        height: 5rem;
+@media (min-width: 768px){
+    .flexCenter{
+        justify-content: flex-start;
     }
-}
+    .gridRecomendacion {
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 7fr 5fr;
+        grid-auto-flow: row;
+    }
+    .distintasRecomendaciones {
+        width: 90%;
+        .recomendacion{
+            width: 100%;
+        }
+    }
 
-@media (min-width: 768px) and (max-width:980px){
-  .noticias img {
-    width: 7rem;
-    height: 5.2rem;
-}
-    aside .noticias p {
-    width: 60%;
-    font-size: 0.6rem;
-  }
+    aside{
+        section{
+            width: 90%;
+            .noticias{
+                img{
+                    width: 45%;
+                    height: 7.5rem;
+                }
+                p{
+                    width: 55%;
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 981px) and (max-width:2561px){
-    aside .noticias p {
-        width: 60%;
-        font-size: 0.9rem;
+    aside{
+        section{
+            .noticias{
+                img{
+                    width: 40%;
+                }
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
     }
-    .textFooter {
-        font-size: 1.5rem;
+    main{
+        .footer{
+            .footerLeft{
+                .textFooter {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        
     }
     
     .iconRedSocial {
